@@ -59,6 +59,7 @@ img{
   padding: 20px 80px;
   background: #e3e6f3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  position: sticky;
 }
 
 #navbar{
@@ -102,6 +103,7 @@ img{
 
 .home-page{
   display: flex;
+  background: #e3e6f3;
 }
 .home-page img{
   width: 70%;
@@ -109,6 +111,7 @@ img{
 }
 
 .home-p-t{
+  
   width: 900px;
   padding-top: 15%;
   padding-left: 5%;
@@ -131,4 +134,10 @@ padding: 4px;
 color: #088178;
 border: none;
 cursor: pointer;
+}
+
+.features .f-box h6{
+  width: 180PX;
+  text-align: center;
+  padding: 25px 15px;
 }
