@@ -99,7 +99,24 @@ img{
 }
 
 /* home page */
-#hero {
- 
+
+.home-page{
+  display: flex;
+}
+.home-page img{
+  width: 70%;
+  margin-left: 20%;
+}
+
+.home-p-t{
+  width: 900px;
+  padding-top: 15%;
+  padding-left: 5%;
+}
+.home-p-t h4{
+  font-size: 30px;
+}
+.home-p-t h2{
+  font-size: 60px;
 }
 
