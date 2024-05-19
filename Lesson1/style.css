@@ -114,9 +114,21 @@ img{
   padding-left: 5%;
 }
 .home-p-t h4{
+  padding-bottom: 15px;
   font-size: 30px;
 }
 .home-p-t h2{
   font-size: 60px;
 }
 
+.home-p-t h1{
+  color: #088178;
+}
+.home-p-t button{
+ font-size: 20px;
+font-weight: 700;
+padding: 4px;
+color: #088178;
+border: none;
+cursor: pointer;
+}
