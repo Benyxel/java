@@ -256,3 +256,9 @@ cursor: pointer;
   bottom:20px;
   right: 10px;
 }
+.pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
