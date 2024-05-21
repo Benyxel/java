@@ -299,8 +299,11 @@ padding: 14px 80px 14px 65px;
   color: #088178;
   border: 0;
   cursor: pointer;
-  background-image: url("media/button.png");
-  padding: 15px 60px 15px 65px;
+  padding: 15px 30px 15px 30px;
   border-radius: 20px;
 }
-  
+#banner button:hover{
+  background-color: #088178;
+  color: #ffffff;
+}
+
