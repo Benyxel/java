@@ -198,6 +198,11 @@ padding: 14px 80px 14px 65px;
   text-align: center;
 }
 
+.products1 p {
+  color: #088178;
+  font-weight: 500;
+ 
+}
 .pro{
   position: relative;
   width: 23%;
@@ -307,3 +312,22 @@ padding: 14px 80px 14px 65px;
   color: #ffffff;
 }
 
+#sm-banner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+#sm-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("media/sm1.jpg");
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+
+
+}
