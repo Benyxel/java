@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cart</title>
+</head>
+<body>
+  <section id="header">
+    <a href="#"><img src="media/logo.png" class="logo" alt=""></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active" href="cart.html"><i class='bx bx-shopping-bag'></i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cart-page">
+    <h2>Your Cart</h2>
+    <div class="cart-container"></div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cartContainer = document.querySelector('.cart-container');
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        if (cart.length === 0) {
+            cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+        } else {
+            cart.forEach(item => {
+                const cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                
+                cartItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <div class="cart-item-details">
+                        <h4>${item.name}</h4>
+                        <p>${item.price}</p>
+                        <p>Quantity: ${item.quantity}</p>
+                    </div>
+                `;
+                
+                cartContainer.appendChild(cartItem);
+            });
+        }
+    });
+  </script>
+</body>
+</html>

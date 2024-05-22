@@ -332,3 +332,32 @@ padding: 14px 80px 14px 65px;
  background-position: center;
  padding: 30px ;
 }
+
+/* cart page */
+/* Cart page styles */
+.cart-page {
+  padding: 20px;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cart-item img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
