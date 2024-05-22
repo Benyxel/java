@@ -385,3 +385,17 @@ padding: 14px 80px 14px 65px;
   font-weight: 500;
   padding-bottom: 15px;
 }
+
+#banner3 .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("media/sm4.jpg");
+  min-width: 30%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
