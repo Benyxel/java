@@ -439,5 +439,49 @@ padding: 14px 80px 14px 65px;
   align-items: center;
   background-image: url("media/banner1\ .png");
   background-position: 20% 30%;
-  padding: 40px 80px;
+}
+#newsletter h4{
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
+}
+#newsletter p{
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+#newsletter span{
+  font-size: 16px;
+  color: rgb(255, 188, 2);
+  font-weight: 600;
+}
+
+#newsletter input{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#newsletter .b1{
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  background-color:#088178;
+ white-space: nowrap;
+  outline: none;
+  transition: 0.02s;
+}
+#newsletter .form{
+  display: flex;
+  width: 30%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
