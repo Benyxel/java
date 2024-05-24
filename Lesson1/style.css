@@ -432,3 +432,12 @@ padding: 14px 80px 14px 65px;
   font-weight: 800;
   font-size: 25px;
 }
+#newsletter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("media/banner1\ .png");
+  background-position: 20% 30%;
+  padding: 40px 80px;
+}
