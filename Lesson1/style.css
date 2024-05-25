@@ -489,6 +489,8 @@ padding: 14px 80px 14px 65px;
 footer{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  
 }
 
 
