@@ -490,9 +490,15 @@ footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
+
 }
 
+footer col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
 
 footer .logo{
   margin-bottom: 30px;
