@@ -486,6 +486,11 @@ padding: 14px 80px 14px 65px;
   border-bottom-left-radius: 0;
 }
 
+footer{
+  display: flex;
+}
+
+
 footer .logo{
   margin-bottom: 30px;
 }
