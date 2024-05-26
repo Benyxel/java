@@ -68,6 +68,11 @@ img{
   justify-content: center;
 }
 
+#mobile{
+  display:none;
+  align-items: center;
+}
+
 #navbar li{
   list-style: none;
   padding: 0 20px; 
@@ -570,8 +575,12 @@ footer .copyright{
   }
 
   #navbar li{
-margin-bottom: 25px;
+    margin-bottom: 25px;
+  }
 
+  #mobile{
+    display: flex;
+    align-items: center;
   }
 }
 
