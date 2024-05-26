@@ -68,8 +68,13 @@ img{
   justify-content: center;
 }
 
+#navbar.active{
+  right:0;
+}
+
 #mobile{
   display:none;
+ 
   align-items: center;
 }
 
