@@ -582,5 +582,10 @@ footer .copyright{
     display: flex;
     align-items: center;
   }
+
+  #mobile{color: #088178;
+    font-size: 24px;
+    padding-left: 20px;
+  }
 }
 
