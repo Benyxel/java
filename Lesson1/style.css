@@ -507,7 +507,7 @@ footer .logo{
 }
 
 footer h4{
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom:20px;
 }
 
@@ -529,9 +529,26 @@ footer .follow{
 
 footer .follow i {
   color: #465b52;
+  font-size: 30px;
   padding-left: 4px;
   cursor: pointer;
 }
 
 footer .install .row img{
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+
+footer .install img{
+  margin: 10px 0 15px 0;
+}
+
+
+footer .follow i:hover,
+footer a:hover{
+ color: #088178;
+}
+footer .copyright{
+  width: 100%;
+  text-align: center;
 }
