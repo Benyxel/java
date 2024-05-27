@@ -584,6 +584,9 @@ footer .copyright{
     margin-bottom: 25px;
   }
 
+  i{
+    margin-left: 15px;
+  }
   #mobile{
     display: flex;
     align-items: center;
@@ -592,6 +595,15 @@ footer .copyright{
   #mobile{color: #088178;
     font-size: 24px;
     padding-left: 20px;
+  }
+
+  #close{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 30px;
+    cursor: pointer;
   }
 }
 
