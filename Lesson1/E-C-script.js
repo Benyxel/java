@@ -1,8 +1,12 @@
-const bar = document.getElementById('bar');
-const nav = document.getElementById('navbar');
+document.addEventListener('DOMContentLoaded', () => {
+  const menuIcon = document.querySelector('#mobile .bx-menu');
+  const navbar = document.querySelector('#navbar');
 
-if (bar) {
-   bar.addEventListener('click',()=>{
-   nav.classList.add('active'); 
-  })
-}
+  menuIcon.addEventListener('click', () => {
+    if (navbar.style.right === '0px') {
+      navbar.style.right = '-300px';
+    } else {
+      navbar.style.right = '0px';
+    }
+  });
+});

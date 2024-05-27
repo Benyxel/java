@@ -577,6 +577,7 @@ footer .copyright{
     background-color:#e3e6f3;
     box-shadow: 0 48px 60px rgb(0 0 0/ 0.1);
     padding: 80px 0 0 10px;
+    transition: 0.3s;
   }
 
   #navbar li{
