@@ -596,13 +596,16 @@ footer .copyright{
   }
 
   #close{
-    display: inline;
+    display: initial;
     position: absolute;
     top: 30px;
-    left: 30px;
+    left: 20px;
     color: #222;
     font-size: 30px;
     cursor: pointer;
+  }
+  #lg-bag{
+    display: none;
   }
 }
 
