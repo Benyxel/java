@@ -71,10 +71,12 @@ img{
 #navbar.active{
   right:0;
 }
+#close{
+  display: none;
+}
 
 #mobile{
   display:none;
- 
   align-items: center;
 }
 
@@ -404,10 +406,6 @@ padding: 14px 80px 14px 65px;
 
 }
 
-
-
-
-
 #banner3 .banner-box{
   display: flex;
   flex-direction: column;
@@ -598,6 +596,7 @@ footer .copyright{
   }
 
   #close{
+    display: inline;
     position: absolute;
     top: 30px;
     left: 30px;
