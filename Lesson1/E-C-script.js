@@ -1,13 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const menuIcon = document.querySelector('#mobile .bx-menu');
-  const closeIcon = document.querySelector('#navbar #close');
-  const navbar = document.querySelector('#navbar');
+document.addEventListener('DOMContentLoaded', (event) => {
+  const mobileMenuIcon = document.getElementById('bar');
+  const closeIcon = document.getElementById('close');
+  const navbar = document.getElementById('navbar');
+  const cartIcon = document.getElementById('lg-bag');
 
-   menuIcon.addEventListener('click', () => {
-    navbar.style.right = '0px';
+  mobileMenuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    cartIcon.style.display = navbar.classList.contains('active') ? 'none' : 'block';
+    if (navbar.classList.contains('active')) {
+      mobileMenuIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+    } else {
+      mobileMenuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
+    }
   });
 
   closeIcon.addEventListener('click', () => {
-        navbar.style.right = '-300px';
-        });
- });
+    navbar.classList.remove('active');
+    mobileMenuIcon.style.display = 'block';
+    closeIcon.style.display = 'none';
+    cartIcon.style.display = 'block'; // Show cart icon when closing navbar
+  });
+});
+

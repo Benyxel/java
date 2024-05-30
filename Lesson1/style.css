@@ -565,21 +565,50 @@ footer .copyright{
 
 
  /* Media Query for all mobile devices */
- /* Media Query for Mobile Devices */
+ 
 @media only screen and (max-width: 768px) {
   #header {
     padding: 20px 20px;
     flex-direction: column;
   }
-
-  #navbar {
+  .hidden {
     display: none;
   }
+  
+  #navbar {
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+  }
+  #navbar.active {
+    display: flex; 
+  }
+  #navbar li {
+    list-style: none;
+    padding: 10px 20px; /* Add padding here */
+    position: relative;}
 
   #mobile {
-    display: flex;
+    display: flex;  
+  }
+  #bar{
+    padding-left: 15px;
   }
 
+  #close{
+    padding-left: 15px;
+  }
+  .back{
+    font-size: 25px;
+  }
+
+  .bx{
+     font-size: 25px;
+     color: #222;
+  }
+  .menu{
+    font-size: 25px;
+  }
   .home-page {
     flex-direction: column;
   }
