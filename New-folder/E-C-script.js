@@ -24,3 +24,41 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all add to cart buttons
+    const addToCartButtons = document.querySelectorAll('.cart');
+
+    // Define cart array to store added items
+    let cart = [];
+
+    // Add click event listener to each button
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            // Prevent default behavior of anchor tags
+            event.preventDefault();
+
+            // Get parent product container
+            const productContainer = event.target.closest('.pro');
+
+            // Extract product information
+            const productName = productContainer.querySelector('h5').innerText;
+            const productPrice = parseFloat(productContainer.querySelector('h4').innerText.replace('$', ''));
+
+            // Create new item object
+            const newItem = {
+                name: productName,
+                price: productPrice
+            };
+
+            // Add item to cart array
+            cart.push(newItem);
+
+            // Optionally, update UI (e.g., show confirmation message)
+            alert(`${productName} added to cart!`);
+
+            // You can also update the UI to display the current cart contents
+            // For example, you could have a cart icon that shows the number of items in the cart
+            // or display a list of items in a mini cart dropdown.
+        });
+    });
+});
