@@ -1,5 +1,10 @@
-
-
+:root{ 
+--primary-color: #088178;
+--secondary-color: #222;
+--text-color: #465b52;
+--background-color: #e3e6f3;
+--font-family: 'Roboto', sans-serif;
+}
 
 
 * {
